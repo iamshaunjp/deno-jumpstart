@@ -40,5 +40,5 @@ export const delete_book = (ctx: Context) => {
     books = books.filter((b: Book) => b.id !== id);
     return ctx.json(book, 200);
   }
-  return ctx.string('no book with that id', 401);
+  return ctx.string('no book with that id', 404);
 }
